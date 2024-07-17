@@ -9,7 +9,7 @@ import { io } from "socket.io-client"
 import { reloadChatListHandler } from "../features/reloadSlice";
 
 
-const ENDPOINT = "http://localhost:3004";
+const ENDPOINT = "https://chat-server-flame.vercel.app/";
 var socket;
 function ChatArea() {
   const [text, setText] = useState("");
@@ -57,7 +57,7 @@ function ChatArea() {
         },
       };
       const response = await axios.post(
-        "http://localhost:3004/message/",
+        "https://chat-server-flame.vercel.app/message/",
         {
           text: text,
           chatId: chat_id,
@@ -86,7 +86,7 @@ function ChatArea() {
           },
         };
         const response = await axios.get(
-          "http://localhost:3004/message/" + chat_id,
+          "https://chat-server-flame.vercel.app/message/" + chat_id,
           config
         );
 

@@ -27,7 +27,7 @@ function AllUsers() {
             Authorization: `Bearer ${JSON.parse(userData).data.token}`,
           },
         };
-        const response = await axios.get("http://localhost:3004/users", config);
+        const response = await axios.get("https://chat-server-flame.vercel.app/users", config);
         // console.log("data from backend", response);
         setUsers(response.data);
         console.log('users',users)
@@ -66,7 +66,7 @@ function AllUsers() {
                   Authorization:`Bearer ${JSON.parse(userData).data.token}`
                 }
               }
-              await axios.post('http://localhost:3004/chat/chatAccess',
+              await axios.post('https://chat-server-flame.vercel.app/chat/chatAccess',
               {
                 userId:user._id
               },config)

@@ -18,7 +18,7 @@ function Login() {
         'Content-type':'application/json'
       }
     }
-    const response = await axios.post("http://localhost:3004/login",
+    const response = await axios.post("https://chat-server-flame.vercel.app/login",
     userData,
     config
     )

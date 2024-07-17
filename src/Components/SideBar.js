@@ -56,7 +56,7 @@ function SideBar() {
         },
       };
       const response = await axios.post(
-        "http://localhost:3004/chat/getChats",
+        "https://chat-server-flame.vercel.app/chat/getChats",
         { search: search },
         config
       );

@@ -31,7 +31,7 @@ function CreateGroup() {
             Authorization: `Bearer ${JSON.parse(userData).data.token}`,
           },
         };
-        const response = await axios.get("http://localhost:3004/users", config);
+        const response = await axios.get("https://chat-server-flame.vercel.app/users", config);
         // console.log("data from backend", response);\
         console.log("all members", response.data);
 
@@ -70,7 +70,7 @@ function CreateGroup() {
       },
     };
     const response = await axios.post(
-      "http://localhost:3004/chat/creategroup",
+      "https://chat-server-flame.vercel.app/chat/creategroup",
       {
         name: group,
         users: selectedUsers,

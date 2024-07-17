@@ -26,7 +26,7 @@ function UserGroups() {
           },
         };
         const response = await axios.get(
-          "http://localhost:3004/chat/getGroups",
+          "https://chat-server-flame.vercel.app/chat/getGroups",
           config
         );
         console.log("userGroup data ", response.data);
