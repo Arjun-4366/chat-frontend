@@ -86,7 +86,7 @@ function ChatArea() {
           },
         };
         const response = await axios.get(
-          "https://chat-server-flame.vercel.app/message/" + chat_id,
+          "https://chat-server-djx9ar71a-arjun-t-vs-projects.vercel.app/message/" + chat_id,
           config
         );
 

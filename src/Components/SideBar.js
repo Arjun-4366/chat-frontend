@@ -56,7 +56,7 @@ function SideBar() {
         },
       };
       const response = await axios.post(
-        "https://chat-server-flame.vercel.app/chat/getChats",
+        "https://chat-server-djx9ar71a-arjun-t-vs-projects.vercel.app/chat/getChats",
         { search: search },
         config
       );

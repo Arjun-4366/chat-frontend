@@ -18,7 +18,7 @@ function Login() {
         'Content-type':'application/json'
       }
     }
-    const response = await axios.post("https://chat-server-flame.vercel.app/login",
+    const response = await axios.post("https://chat-server-djx9ar71a-arjun-t-vs-projects.vercel.app/login",
     userData,
     config
     )

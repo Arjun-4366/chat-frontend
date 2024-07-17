@@ -16,7 +16,7 @@ function Register() {
         }
       }
       const response = await axios.post(  
-        "https://chat-server-flame.vercel.app/register",
+        "https://chat-server-djx9ar71a-arjun-t-vs-projects.vercel.app/register",
          userData,
          config
       )

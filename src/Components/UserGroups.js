@@ -26,7 +26,7 @@ function UserGroups() {
           },
         };
         const response = await axios.get(
-          "https://chat-server-flame.vercel.app/chat/getGroups",
+          "https://chat-server-djx9ar71a-arjun-t-vs-projects.vercel.app/chat/getGroups",
           config
         );
         console.log("userGroup data ", response.data);
